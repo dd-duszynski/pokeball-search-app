@@ -1,0 +1,14 @@
+.sectionTitle {
+  margin: 0 0 1rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--clr-text-muted);
+}
+
+.statsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}

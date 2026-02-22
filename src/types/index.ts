@@ -1,0 +1,9 @@
+export type { TPokemonAbility } from "./TPokemonAbility";
+export type { TPokemonData } from "./TPokemonData";
+export type { TPokemonDetailData } from "./TPokemonDetailData";
+export type { TPokemonFormDetail } from "./TPokemonFormDetail";
+export type { TPokemonFormEntry } from "./TPokemonFormEntry";
+export type { TPokemonFormSprites } from "./TPokemonFormSprites";
+export type { TPokemonResult } from "./TPokemonResult";
+export type { TPokemonStat } from "./TPokemonStat";
+export type { TPokemonType } from "./TPokemonType";

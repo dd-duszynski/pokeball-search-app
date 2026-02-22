@@ -1,0 +1,37 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.375rem 0.75rem;
+  border-radius: calc(var(--radius) - 2px);
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+
+.card:hover,
+.card.active {
+  background-color: var(--clr-surface-2);
+}
+
+.card.active {
+  outline: 2px solid var(--clr-focus);
+  outline-offset: -2px;
+}
+
+.sprite {
+  width: 96px;
+  height: 96px;
+  flex-shrink: 0;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.name {
+  font-size: 0.95rem;
+  color: var(--clr-text);
+  font-weight: 500;
+  text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,90 @@
+.statRow {
+  display: grid;
+  grid-template-columns: 5.5rem 2.75rem 1fr;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.statName {
+  position: relative;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--clr-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  cursor: default;
+  overflow: visible;
+}
+
+.statName::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 9px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  background: var(--clr-surface);
+  color: var(--clr-text);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius);
+  padding: 0.3rem 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0;
+  white-space: nowrap;
+  box-shadow: var(--shadow);
+  pointer-events: none;
+  opacity: 0;
+  transition:
+    opacity var(--transition),
+    transform var(--transition);
+  z-index: 200;
+}
+
+.statName::before {
+  content: "";
+  position: absolute;
+  bottom: calc(100% + 4px);
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background: var(--clr-surface);
+  border-right: 1px solid var(--clr-border);
+  border-bottom: 1px solid var(--clr-border);
+  transform: translateX(-50%) rotate(45deg);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity var(--transition);
+  z-index: 201;
+}
+
+.statName:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.statName:hover::before {
+  opacity: 1;
+}
+
+.statBar {
+  height: 8px;
+  background: var(--clr-surface-2);
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid var(--clr-border);
+}
+
+.statValue {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--clr-text);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.statFill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}

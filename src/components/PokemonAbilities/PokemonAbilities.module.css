@@ -1,0 +1,45 @@
+.sectionTitle {
+  color: var(--clr-text-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+}
+
+.abilitiesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.abilityItem {
+  align-items: center;
+  background: var(--clr-surface-2);
+  border-radius: 0.5rem;
+  border: 1px solid var(--clr-border);
+  display: flex;
+  gap: 0.45rem;
+  padding: 0.375rem 0.875rem;
+}
+
+.abilityName {
+  color: var(--clr-text);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.hiddenBadge {
+  background: var(--clr-hidden);
+  border-radius: 0.25rem;
+  color: var(--clr-white);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.1rem 0.4rem;
+  text-transform: uppercase;
+}

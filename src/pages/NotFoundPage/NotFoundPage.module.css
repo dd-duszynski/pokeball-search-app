@@ -1,0 +1,23 @@
+.code {
+  color: var(--clr-brand);
+  font-size: clamp(5rem, 20vw, 9rem);
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  opacity: 0.18;
+}
+
+.title {
+  color: var(--clr-text);
+  font-size: clamp(1.5rem, 5vw, 2.25rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--clr-text-muted);
+  max-width: 28ch;
+}
